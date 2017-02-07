@@ -1,0 +1,30 @@
+/**index.wxss**/
+.container{
+  background-color: #92B4F4;
+}
+.indexInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.indexInfo-img {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 40rpx;
+  border-radius: 50%;
+}
+
+.indexInfo-title {
+  color: #fff;
+}
+
+.indexSlogan {
+  color:#fff;
+  margin-top: 200px;
+  /*padding:40rpx 100rpx;*/
+  /*background-color: #4472CA;*/
+}
+.indexSlogan-Btn{
+  background-color: #4472CA;
+}

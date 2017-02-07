@@ -1,0 +1,20 @@
+<!--pages/course/course.wxml-->
+<view class="media">
+  <view class="name">{{courseDetail.name}}</view>
+  <view wx:if="{{link.length > 0}}">
+    <video src="http://ugcbsy.qq.com/flv/23/10/n0360vejakb.p701.2.mp4?sdtfrom=v1010&guid=0d75848db8c0fab4ee3e56c96d99be96&vkey=CA7AC8ECBB0ED7C7063731ED06B70B9FE13E6D633E3C4AE27E869BB3C63CC6B49A118335DD55CDF3047751C05EB1445D657BE584E0264FF842440CC0A0AC6EDFFC53D045F7D18CB1A5D5D16B405DE7C4C0A5B01FD1AF49F048B313F58F1DDEC0F10843BB83B2B98A96B04990F0788F30" controls class="video"></video>
+  </view>
+</view>
+
+<view class="intro">
+  {{courseDetail.intro}}
+</view>
+<view class="content">
+  <view class="header">课程内容</view>
+  <view wx:for="{{courseDetail.content}}" wx:key="id">
+      <view class="chapter">{{item.header}}</view>
+      <view wx:for="{{item.section}}" wx:key="title" class="title">
+        {{index + 1}}. {{item.title}}
+      </view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/courses/courses",
+    "pages/course/course",
+    "pages/toutiao/toutiao"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff4081",
+    "navigationBarTitleText": "黄胖子学编程",
+    "navigationBarTextStyle":"white"
+  },
+ "tabBar": {
+   "color":"#AEB8C3",
+   "selectedColor": "#fff",
+   "backgroundColor": "#ff4081",
+   "borderStyle": "white",
+   "position":"bottom",
+    "list": [{
+      "pagePath": "pages/courses/courses",
+      "text": "课程"
+    }, {
+      "pagePath": "pages/toutiao/toutiao",
+      "text": "头条"
+    }]
+  }
+}
